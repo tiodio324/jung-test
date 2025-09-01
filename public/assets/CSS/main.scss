@@ -1,0 +1,86 @@
+@font-face {
+    font-family: Nike;
+    src: url("../Nike 2002-04.ttf");
+}
+
+.app {
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1170px;
+}
+
+
+button {
+    &:hover {
+        cursor: pointer;
+        opacity: 0.85;
+    }
+    &:active {
+        opacity: 0.7;
+    }
+}
+
+h1 {
+    font-family: Nike;
+}
+
+
+.btnStartContainer, .btnRestartContainer, .btnSubmitContainer {
+    text-align: center;
+
+    h1 {
+        margin: 0;
+    }
+
+    button {
+        margin-top: 1.4rem;
+        border: 1px solid green;
+        border-radius: 60px;
+        background-color: rgb(210, 248, 210);
+        padding: 5px 35px;
+        font-size: 24px;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+.btnSubmitContainer {
+    align-self: center;
+    margin-bottom: 3rem;
+}
+
+.form {
+    h2 {
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    .formControlContainer {
+        border: 1px solid #ccc;
+        margin-bottom: 1rem;
+        padding: 12px 25px;
+    }
+
+    .formControl {
+        display: flex;
+        flex-direction: column;
+
+        .formInputContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            margin-top: 15px;
+
+            input {
+                width: 15px;
+                height: 15px;
+                margin-right: 8px;
+                accent-color: green;
+            }
+        }
+    }
+}
